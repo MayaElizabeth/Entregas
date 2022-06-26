@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 300px auto auto 80px;
+    grid-template-areas:"encabezado encabezado encabezado encabezado encabezado"
+                        "navegador  navegador  navegador  navegador  navegador"
+                        "mapa       mapa       contenido  contenido  contenido"
+                        "franja     franja     franja     franja     franja"
+}
+
+    .encabezado{
+        background-color: #8233a3;
+        grid-area: encabezado;
+        display: flex;
+        justify-content: center;
+    }
+    
+        
+        
+    .navegador{
+    grid-area: navegador;
+    }
+    
+    
+    .mapa{
+        grid-area: mapa;
+        background-image: url(../Imagenes/Mapa\ SE.png);
+        background-size:cover;
+        
+    
+    }
+    
+    .contenido{
+        grid-area: contenido;
+        display:flex
+        aling-items:center;
+    }
+    
+    .franja{
+        grid-area: franja;
+        background-color: #FFC800;
+    }
+    
+    /*flexbox*/
+    .navegador{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .navegador ul{
+        display: flex;
+        list-style: none ;
+    }
+    
+    .navegador ul li{
+        padding: 25px;
+    }
+    .navegador ul li a {
+        font-size: 25px;
+        font-style: bold;
+        text-decoration: none;
+    }
+    
+    /*menu cada una de diferente color*/
+    .titulo{
+        color:#8233a3;
+        font-size: 50px;
+    }
+    
+    .texto{
+        padding: 30px;
+        text-align: justify;
+        font-family: raleway;
+        /*Como agrego la tipografia al codigo*/
+    }
+    
+    .btn{
+        background-color: #8233a3;
+        color: white;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        /*Como hago que el boton quede en la mitad?*/
+    }
+.franja{
+    padding: 15px;
+}
+    
+@media(min-width:600px){
+    .navegador{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    .navegador ul{
+        display: flex;
+        list-style: none ;
+    }
+    
+    .navegador ul li{
+        padding: 5px;
+    }
+    .navegador ul li a {
+        font-size: 15px;
+        font-style: bold;
+        text-decoration: none;
+    }
+    .mapa{
+
+    }
+    .titulo{
+        color:#8233a3;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .texto{
+        padding: 20px;
+        text-align: justify;
+        font-family: raleway;
+        font-size: 15px;
+        /*Como agrego la tipografia al codigo*/
+    }
+    
+    .btn{
+        background-color: #8233a3;
+        color: white;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;

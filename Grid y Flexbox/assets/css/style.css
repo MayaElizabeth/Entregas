@@ -112,22 +112,20 @@
 .rutaecologica__img {
     margin: 50px;
 }
-.rutasdesiembra {
-    display: flex;
-    align-content: column;
+.rutasiembra__logo{
+    margin: 30px;
 }
-.rutasdesiembra__logo {
-    margin: 5px;
+.rutasiembra__subtitulo{
+    font-size: 25px;
+    color: #7ed957;
 }
-.rutasdesiembra__subtitulo {
-    font-size: 30px;
-    text-align: center;
-    color: #7ed957
-}
-.rutasdesiembra__texto {
+.rutasiembra__texto{
     text-align: justify;
     font-style: normal;
-    margin: 20px;
+    margin: 10px;
+}
+.rutasiembra__img{
+    margin: 50px;
 }
 
 /*PageHospedajes*/

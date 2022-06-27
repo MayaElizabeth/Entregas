@@ -1,143 +1,171 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.contenedor{
+
+.encabezado {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 300px auto auto 80px;
-    grid-template-areas:"encabezado encabezado encabezado encabezado encabezado"
-                        "navegador  navegador  navegador  navegador  navegador"
-                        "mapa       mapa       contenido  contenido  contenido"
-                        "franja     franja     franja     franja     franja"
+    grid-template-columns: repeat(100%);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #8233a3;
 }
 
-    .encabezado{
-        background-color: #8233a3;
-        grid-area: encabezado;
-        display: flex;
-        justify-content: center;
-    }
-    
-        
-        
-    .navegador{
-    grid-area: navegador;
-    }
-    
-    
-    .mapa{
-        grid-area: mapa;
-        background-image: url(../Imagenes/Mapa\ SE.png);
-        background-size:cover;
-        
-    
-    }
-    
-    .contenido{
-        grid-area: contenido;
-        display:flex
-        aling-items:center;
-    }
-    
-    .franja{
-        grid-area: franja;
-        background-color: #FFC800;
-    }
-    
-    /*flexbox*/
-    .navegador{
-        display:flex;
-        justify-content: space-evenly;
-    }
-    .navegador ul{
-        display: flex;
-        list-style: none ;
-    }
-    
-    .navegador ul li{
-        padding: 25px;
-    }
-    .navegador ul li a {
-        font-size: 25px;
-        font-style: bold;
-        text-decoration: none;
-    }
-    
-    /*menu cada una de diferente color*/
-    .titulo{
-        color:#8233a3;
-        font-size: 50px;
-    }
-    
-    .texto{
-        padding: 30px;
-        text-align: justify;
-        font-family: raleway;
-        /*Como agrego la tipografia al codigo*/
-    }
-    
-    .btn{
-        background-color: #8233a3;
-        color: white;
-        padding: 10px 20px;
-        border: 0;
-        border-radius: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        /*Como hago que el boton quede en la mitad?*/
-    }
-.franja{
-    padding: 15px;
-}
-    
-@media(min-width:600px){
-    .navegador{
-        display:flex;
-        justify-content: space-evenly;
-    }
-    .navegador ul{
-        display: flex;
-        list-style: none ;
-    }
-    
-    .navegador ul li{
-        padding: 5px;
-    }
-    .navegador ul li a {
-        font-size: 15px;
-        font-style: bold;
-        text-decoration: none;
-    }
-    .mapa{
 
-    }
-    .titulo{
-        color:#8233a3;
-        font-size: 30px;
-        text-align: center;
-    }
-    
-    .texto{
-        padding: 20px;
-        text-align: justify;
-        font-family: raleway;
-        font-size: 15px;
-        /*Como agrego la tipografia al codigo*/
-    }
-    
-    .btn{
-        background-color: #8233a3;
-        color: white;
-        padding: 10px 20px;
-        border: 0;
-        border-radius: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+.navegador {
+    display: grid;
+    grid-template-columns: repeat(100%);
+}
+
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+.contenido {
+    margin: 30px;
+    display: flex;
+    align-content: center;
+}
+
+.franja {
+    display: grid;
+    grid-template-columns: repeat(100%);
+    background-color: #FFC800;
+}
+
+/*flexbox*/
+.navegador {
+    display: flex;
+    justify-content: space-around;
+    /*menu quede repartido*/
+}
+
+.navegador ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegador ul li {
+    padding: 30px;
+}
+
+.navegador ul li a {
+    font-size: 25px;
+    font-style: bold;
+    text-decoration: none;
+}
+
+/*menu cada una de diferente color*/
+.titulo {
+    color: #8233a3;
+    font-size: 70px;
+}
+
+.texto {
+    padding: 30px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    /*Como agrego la tipografia al codigo (Raleway)*/
+}
+
+.btn {
+    background-color: #8233a3;
+    color: white;
+    width: 200px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    margin: 100px 300px;
+
+
+
+}
+
+.franja {
+    padding: 5px;
+    font-size: 8px;
+}
+
+/*como agregar la franja de colores*/
+
+/*PageRutas*/
+.rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1;
+    margin: 5px;
+    padding: 50px;
+}
+
+
+.rutag__logo {
+    margin: 50px 70px;
+}
+
+.rutag {}
+
+.rutag__titulo {
+    text-align: center;
+    font-size: 30px;
+    color: #00d4d6;
+
+}
+
+.rutag__texto {
+    text-align: justify;
+    font-style: normal;
+    margin: 10px;
+}
+
+.rutaecologica__titulo {
+    font-size: 60px;
+    text-align: center;
+    color: #0caa79
+}
+
+.rutaecologica__subtitulo {
+    font-size: 30px;
+    text-align: center;
+    ;
+    color: #00d4d6
+}
+
+.rutaecologica__img {
+    margin: 50px;
+}
+
+.rutasdesiembra {
+    display: flex;
+    align-content: column;
+
+
+}
+
+.rutasdesiembra__logo {
+    margin: 5px;
+
+}
+
+.rutasdesiembra__subtitulo {
+    font-size: 30px;
+    text-align: center;
+    color: #7ed957
+}
+
+.rutasdesiembra__texto {
+    text-align: justify;
+    font-style: normal;
+    margin: 20px;
+}
+
+*/
+/*PageHospedajes*/

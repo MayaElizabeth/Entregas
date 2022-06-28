@@ -1,215 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .encabezado {
-    display: grid;
-    grid-template-columns: repeat(100%);
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: #8233a3;
+  display: grid;
+  grid-template-columns: 100%;
 }
 .navegador {
-    display: grid;
-    grid-template-columns: repeat(100%);
+  display: grid;
+  grid-template-columns: 100%;
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .contenido {
-    display: grid;
-    grid-template-columns: repeat(2, 3fr);
-}
-.contenido {
-    margin: 30px;
-    display: flex;
-    align-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 .franja {
     display: grid;
-    grid-template-columns: repeat(100%);
-    background-color: #FFC800;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px;
 }
-
-<<<<<<< HEAD
-/*flexbox*/
+/*FlexBox*/
+.encabezado {
+  background-color: #8233a3;
+  display: flex;
+  justify-content: center;
+}
 .navegador {
-    display: flex;
-    justify-content: space-around;
-    /*menu quede repartido*/
+  font-size: 20px;
+  margin: 30px;
 }
-.navegador ul {
-    display: flex;
-    list-style: none;
+.menu {
+  justify-items: center;
+  margin: 10px;
+  font-weight: bold;
 }
-.navegador ul li {
-    padding: 30px;
+li {
+  list-style: none;
 }
-.navegador ul li a {
-    font-size: 25px;
-    font-style: bold;
-    text-decoration: none;
+li a {
+  text-decoration: none;
 }
-/*menu cada una de diferente color*/
 .titulo {
-    color: #8233a3;
-    font-size: 70px;
+  font-size: 50px;
+  align-items: center;
+  color: #8233a3;
 }
 .texto {
-    padding: 30px;
-    text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    font-size: 30px;
-    /*Como agrego la tipografia al codigo (Raleway)*/
+  text-align: justify;
+  font-size: 20px;
+  margin: 0 10px;
 }
-.btn {
+.texto1 {
+  margin: 15px;
+}
+.texto2 {
+  margin: 15px;
+}
+.btn{
     background-color: #8233a3;
-    color: white;
-    width: 200px;
+    color: #ffff;
+    border: none;
+    border-radius: 4px;
     font-size: 20px;
-    padding: 10px 20px;
-    border: 0;
-    border-radius: 10px;
-    margin: 100px 300px;
+    padding:10px 20px;
+    display: block;
+    margin: auto;
+    /*comocolocar en el centro*/
 }
-.franja {
-    padding: 5px;
-    font-size: 8px;
-=======
-    .encabezado{
-        background-color: #8233a3;
-        grid-area: encabezado;
-        display: flex;
-        justify-content: center;
-    }
-    
-        
-        
-    .navegador{
-    grid-area: navegador;
-    }
-    
-    
-    .mapa{
-        grid-area: mapa;
-        background-image: url(../Imagenes/Mapa\ SE.png);
-        background-size:cover;
-        
-    
-    }
-    
-    .contenido{
-        grid-area: contenido;
-        display:flex
-        aling-items:center;
-    }
-    
-    .franja{
-        grid-area: franja;
-        background-color: #FFC800;
-    }
-    
-    /*flexbox*/
-    .navegador{
-        display:flex;
-        justify-content: space-evenly;
-    }
-    .navegador ul{
-        display: flex;
-        list-style: none ;
-    }
-    
-    .navegador ul li{
-        padding: 25px;
-    }
-    .navegador ul li a {
-        font-size: 25px;
-        font-style: bold;
-        text-decoration: none;
-    }
-    
-    /*menu cada una de diferente color*/
-    .titulo{
-        color:#8233a3;
-        font-size: 50px;
-    }
-    
-    .texto{
-        padding: 30px;
-        text-align: justify;
-        font-family: raleway;
-        /*Como agrego la tipografia al codigo*/
-    }
-    
-    .btn{
-        background-color: #8233a3;
-        color: white;
-        padding: 10px 20px;
-        border: 0;
-        border-radius: 10px;
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .btn:hover{
-        transform: scale(1.2);
-    }
+
+.btn:hover {
+  transform: scale(1.2);
+}
 .franja{
-    padding: 15px;
->>>>>>> animaciones
+    background-color: #ffc800;
 }
-
-/*como agregar la franja de colores*/
-
-/*PageRutas*/ 
-.rutas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 3px;
-    padding: 50px;
-    align-items: center;
-}
-
-.rutag {}
-.rutag__titulo {
-    text-align: center;
-    font-size: 30px;
-    color: #00d4d6;
-}
-.rutag__texto {
-    text-align: justify;
-    font-style: normal;
-    margin: 10px;
-}
-.rutaecologica__titulo {
-    font-size: 60px;
-    text-align: center;
-    color: #0caa79
-}
-.rutaecologica__subtitulo {
-    font-size: 30px;
-    text-align: center;
-    ;
-    color: #00d4d6
-}
-.rutaecologica__img {
-    margin: 50px;
-}
-.rutasiembra__logo{
-    margin: 30px;
-}
-.rutasiembra__subtitulo{
-    font-size: 25px;
-    color: #7ed957;
-}
-.rutasiembra__texto{
-    text-align: justify;
-    font-style: normal;
-    margin: 10px;
-}
-.rutasiembra__img{
-    margin: 50px;
-}
-
-/*PageHospedajes*/
+@media

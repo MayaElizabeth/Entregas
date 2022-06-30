@@ -9,22 +9,21 @@
 }
 .navegador {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 100%; /*por que queda QueHacer abajo?*/
 }
 .menu {
-  display: grid;/*
+  display: grid; /*
   grid-template-columns: repeat(5, 1fr);*/
-  grid-template-areas: 
-  "mapa mapa info info";
+  grid-template-areas: 'mapa mapa info info';
 }
 .contenido {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .franja {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30px;
 }
 /*FlexBox*/
 .encabezado {
@@ -34,7 +33,7 @@
 }
 .navegador {
   font-size: 20px;
-  margin: 30px;
+  margin: 20px;
 }
 .menu {
   justify-items: center;
@@ -63,30 +62,89 @@ li a {
 .texto2 {
   margin: 15px;
 }
-.btn{
-    background-color: #8233a3;
-    color: #ffff;
-    border: none;
-    border-radius: 4px;
-    font-size: 20px;
-    padding:10px 20px;
-    display: block;
-    margin: auto;
-    /*comocolocar en el centro*/
+.btn {
+  background-color: #8233a3;
+  color: #ffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: block;
+  margin: auto;
 }
 
 .btn:hover {
   transform: scale(1.2);
 }
-.franja{
-    background-color: #ffc800;
+.franja {
+  background-color: #ffc800;
 }
-@media (max-width:1080px){
-    .contenido{
-        grid-template-areas:
-        "mapa mapa mapa mapa"
-        "info info info info";
-        
-    }
+.rutas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
 }
-
+.rutag__logo {
+  display: block;
+  margin: auto;
+}
+.rutag__titulo {
+  text-align: center;
+  font-size: 30px;
+  color: #00d4d6;
+  margin: 10px;
+}
+.rutag__texto {
+  text-align: justify;
+  margin: 15px;
+}
+.rutag__img {
+  display: block;
+  margin: auto;
+}
+.rutaecologica__titulo {
+  text-align: center;
+  font-size: 60px;
+  color: #0caa79;
+  margin: 0 auto;
+}
+.rutaecologica__subtitulo {
+  text-align: center;
+  font-size: 30px;
+  color: #00d4d6;
+}
+.rutaecologica__img {
+  display: block;
+  margin: auto;
+}
+.rutasiembra__logo {
+  display: block;
+  margin: auto;
+}
+.rutasiembra__subtitulo {
+  text-align: center;
+  font-size: 25px;
+  color: #7ed957;
+  margin: 10px;
+}
+.rutasiembra__texto {
+  text-align: justify;
+  font-size: 20px;
+  margin: 15px;
+}
+.rutasiembra__img {
+  display: block;
+  margin: auto;
+}
+@media (max-width: 1080px) {
+  .contenido {
+    grid-template-areas:
+      'mapa mapa mapa mapa'
+      'info info info info';
+  }
+  .rutas {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

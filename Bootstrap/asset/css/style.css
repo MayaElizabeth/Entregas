@@ -1,4 +1,86 @@
-
-.nav-item1{
-    background-color: #ffff;
+.inicio{
+    color: #00d4d6;
+}
+.inicio :hover{
+    background-color: #00d4d62b;
+}
+.rutas{
+    color: #ff5bc9;
+}
+.rutas :hover{
+    background-color: #ff5bc92b;
+}
+.hospedajes{
+    color: #0caa79;
+}
+.hospedajes :hover{
+    background-color: #0caa792b; 
+}
+.restaurantes{
+    color: #ed0a0a;
+}
+.restaurantes :hover{
+    background-color: #ed0a0a2b;
+}
+.QueHacer{
+    color: #ffc800;
+}
+.QueHacer :hover{
+    background-color: #ffc8002b;
+}
+.titulo{ color: #8233a3;
+    font-size: bold;
+    
+}
+.p1{text-align: justify;
+    
+}
+.p2{text-align: justify;
+    
+}
+.p3{text-align: justify;
+    
+}
+.logoRutaG{
+    margin: 90px;
+}
+.RutaG__sub{
+    text-align: center;
+    font-style: bold;
+    font-size: 30px;
+}
+.RutaG__texto{
+    text-align: justify;
+    font-size: 20px;
+}
+.imgRutaG{
+    margin: 70px;
+}
+.RutaG__logo{
+    align-content: center;
+}
+.RutaE__titulo{
+    text-align: center;
+    font-style: bold;
+    font-size: 70px;
+}
+.RutaE__sub{
+    text-align: center;
+    font-size: 30px;
+}
+.azul{
+    background-color: #00d4d6;
+    color: #00d4d6;
+}
+.rosa{
+    background-color: #ff5bc9;
+}
+.verde{
+    background-color: #0caa79;
+}
+.rojo{
+    background-color: #ed0a0a;
+}
+.amarillo{
+    background-color: #ffc800;
 }

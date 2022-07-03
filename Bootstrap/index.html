@@ -17,7 +17,7 @@
   <body class="container-fluir">
     <header>
         <div class="">
-            <img src="./asset/imagenes/LogoPndora.jpg" alt="">
+            <img class="img-fluid" src="./asset/imagenes/LogoPndora.jpg" alt="">
           </div>
     </header>
     <nav>
@@ -39,24 +39,25 @@
         </li>
       </ul>
     </nav>
-    <main class="contenedor "> 
-      <div class="imgmapa"><img src="./asset/imagenes/Mapa.webp" alt="" /></div>
-      <div class="titulo m-3"><h1>¿Quienes Somos?</h1></div>
-      <div class="p1 m-4">
+    <main class="contenedor">
+      <div class="row"> 
+      <div class="imgmapa col-12 col-md-12 col-xxl-6"><img class="img-fluid" src="./asset/imagenes/Mapa.webp" alt="" /></div>
+      <div class="titulo m-3 col-12 col-md-12 col-xxl-6"><h1>¿Quienes Somos?</h1></div>
+      <div class="p1 m-4 col-12 col-md-12 col-xxl-6">
         <h3>
           Pandora Operador Turístico nace después de la pandemia en el año 2021,
           en el corregimiento de Santa Elena-Medellín, Colombia.
         </h3>
       </div>
       <div>
-        <h3 class="p2 m-4">
+        <h3 class="p2 m-4 col-12 col-md-12 col-xxl-6">
           Detectamos una necesidad en el territorio ya que solo es conocido en
           las ferias de las flores, más no por todo el potencial que tiene en
           actividades ecológicas, hermosos hospedajes y su exquisita
           gastronomia.
         </h3>
       </div>
-      <div class="p3 m-4">
+      <div class="p3 m-4 col-12 col-md-12 col-xxl-6">
         <h3>
           Nuestro objetivo es darlo a conocer fortaleciendo la economia del
           territorio, aliandonos con ellos, entre nuestras alianzas tenemos a
@@ -66,9 +67,14 @@
           corregimiento para poder llevar a cabo nuestro objetivo.
         </h3>
       </div>
+    </div>
     </main>
-    <aside></aside>
-    <footer class="container-fluir">
+    <aside>
+      <div>
+        <button class="btn">Registrate</button>
+      </div>
+    </aside>
+    <footer class="container-fluir mt-5">
       <div class="row">
         <div class="col azul">a</div>
         <div class="col rosa"></div>

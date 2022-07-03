@@ -41,6 +41,14 @@
 .p3{text-align: justify;
     
 }
+.btn{
+    border: 0;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #8233a3;
+    color: #fff;
+}
 .logoRutaG{
     margin: 90px;
 }
@@ -67,6 +75,14 @@
 .RutaE__sub{
     text-align: center;
     font-size: 30px;
+}
+.RutaS__sub{
+    text-align: center;
+    font-size: 30px;
+}
+.RutaS__texto{
+    text-align: justify;
+    font-size: 20px;
 }
 .azul{
     background-color: #00d4d6;
